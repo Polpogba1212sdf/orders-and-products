@@ -5,7 +5,7 @@ class SocketioService {
   constructor() {}
 
   setupSocketConnection() {
-    this.socket = io(process.env.VUE_APP_SOCKET_ENDPOINT);
+    this.socket = io("http://localhost:3000");
   }
 
   disconnect() {
